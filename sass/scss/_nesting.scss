@@ -1,0 +1,20 @@
+// Import file example
+.nesting {
+  background: none;
+  position: absolute;
+  h1 {
+    left:0;
+    top:0;
+  }
+  p {
+    float: left;
+    padding: 10px;   
+  }
+}
+
+.nesting-properties {
+	text: {
+		decoration: underline;
+		transform: lowercase;
+  }
+}
