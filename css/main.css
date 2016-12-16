@@ -1,9 +1,0 @@
-@charset "UTF-8";
-/*
-* comentario de bloque
-* que sí se incluirá
-* en el fichero CSS compilado
-*/
-div.import1 {
-  background: none;
-  position: absolute; }
