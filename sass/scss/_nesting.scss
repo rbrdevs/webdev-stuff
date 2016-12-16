@@ -8,7 +8,7 @@
   }
   p {
     float: left;
-    padding: 10px;   
+    padding: 10px;
   }
 }
 
@@ -16,5 +16,32 @@
 	text: {
 		decoration: underline;
 		transform: lowercase;
+  }
+}
+
+.parent-selector {
+  .callout {
+    color:blue;
+  }
+  &.callout {
+    color: green;
+  }
+}
+
+.parent-reference {
+  .callout {
+    color:blue;
+  }
+  .callout & {
+    color: green;
+  }
+}
+
+.parent-reference1 {
+  .h2 {
+    color:blue;
+    .callout & {
+      color: green;
+    }
   }
 }
