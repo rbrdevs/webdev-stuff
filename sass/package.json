@@ -1,0 +1,20 @@
+{
+  "name": "sass-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "./bin/build-css",
+    "watch-sass": "./bin/watch-sass"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "rbrdevs@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "node-sass": "^4.0.0",
+    "nodemon": "^1.11.0"
+  }
+}

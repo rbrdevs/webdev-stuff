@@ -4,5 +4,6 @@
 * que sí se incluirá
 * en el fichero CSS compilado
 */
-
-/*# sourceMappingURL=example1.css.map */
+div.import1 {
+  background: none;
+  position: absolute; }
