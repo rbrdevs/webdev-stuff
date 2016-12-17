@@ -1,0 +1,15 @@
+@mixin button {
+  border: 1px solid #ccc;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.btn-a {
+  @include button;
+  background: #777;
+}
+
+.btn-b {
+  @include button;
+  background: #ff0;
+}
