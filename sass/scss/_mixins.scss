@@ -16,14 +16,17 @@
 }
 
 //L3.2 Adding arguments
-@mixin box-sizing {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+@mixin box-sizing($x: content-box) { //valor por defecto
+  -webkit-box-sizing: $x;
+  -moz-box-sizing: $x;
+  box-sizing: $x;
 }
 
 .content {
-  @include box-sizing;
+  @include box-sizing(border-box);
   border: 1px solid #ccc;
   padding: 20px;
+}
+.callout {
+  @include box-sizing; //sin argumentos
 }
