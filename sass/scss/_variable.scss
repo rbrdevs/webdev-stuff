@@ -1,11 +1,50 @@
 $base: #777777;
 $vardefault: 110px !default;
+$varboolean: true;
+$varnumber: 1.2rem;
+$varcolor: red;
+$varstring: 'Helvetica Neue';
+$varlist: 40px 0 20px 100px;
 
 .sidebar {
   border: 1px solid $base;
   width: $vardefault;
+  color: $varcolor;
   p {
     color: $base;
+    width: $varnumber;
+    font-family: $varstring;
+    margin: $varlist;
   }
+}
 
+//Variable Scope
+p {
+  $border: 1px solid gray;
+}
+div.error {
+  //border: $border; //daría error por no estar definida
+}
+
+$varscope: 2rem;
+
+h1 {
+  $varscope: 1.2rem;
+  font-size: $varscope;
+}
+
+h2 {
+  font-size: $varscope; //vale 2rem
+}
+
+//Interpolation
+$side: top;
+
+sub {
+  position: relative;
+  #{$side}: -0.5em;
+}
+
+.callout-#{$side} {
+  background: #777;
 }
