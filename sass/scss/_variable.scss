@@ -1,0 +1,11 @@
+$base: #777777;
+$vardefault: 110px !default;
+
+.sidebar {
+  border: 1px solid $base;
+  width: $vardefault;
+  p {
+    color: $base;
+  }
+
+}

@@ -4,5 +4,8 @@
 * que sí se incluirá
 * en el fichero CSS compilado
 */
- 
+
 @import "nesting";
+
+$vardefault : 100px;
+@import "variable";
