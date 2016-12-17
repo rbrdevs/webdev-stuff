@@ -1,3 +1,4 @@
+//L3.1 Mixins setup + use
 @mixin button {
   border: 1px solid #ccc;
   font-size: 1em;
@@ -12,4 +13,17 @@
 .btn-b {
   @include button;
   background: #ff0;
+}
+
+//L3.2 Adding arguments
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content {
+  @include box-sizing;
+  border: 1px solid #ccc;
+  padding: 20px;
 }
