@@ -1,3 +1,4 @@
+//L4.1 Extend Setup + Use
 .extend-a {
   background: #777;
   border: 1px solid #ccc;
@@ -9,3 +10,15 @@
   @extend .extend-a;
   background: #ff0;
 };
+
+//L4.2 Nesting + Extend
+.content-ne {
+  border: 1px solid #ccc;
+  h2 {
+    font-size: 2em;
+  }
+}
+.callout-ne {
+  @extend .content-ne;
+  background: #ddd;
+}
