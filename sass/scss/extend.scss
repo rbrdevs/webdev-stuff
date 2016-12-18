@@ -22,3 +22,18 @@
   @extend .content-ne;
   background: #ddd;
 }
+
+//L4.3 Extend Pitfalls
+.btn-ep-a {
+  background: #777;
+  font-size: 1em;
+}
+
+.btn-ep-b {
+  @extend .btn-ep-a;
+  background: #ff0;
+}
+
+.sidebar .btn-ep-a {
+  text-transform: lowercase;
+}
