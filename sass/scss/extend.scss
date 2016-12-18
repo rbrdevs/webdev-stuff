@@ -37,3 +37,19 @@
 .sidebar .btn-ep-a {
   text-transform: lowercase;
 }
+
+//L4.4 Placeholder Selector
+%btn-ps {
+  background: #777;
+  font-size: 1em;
+}
+.btn-ps-a {
+  @extend %btn-ps;
+}
+.btn-ep-b {
+  @extend %btn-ps;
+  background: #ff0;
+}
+.sidebar .btn-ps-a { //En este caso no interfiere con .btn-ep-b
+  text-transform: lowercase;
+}
