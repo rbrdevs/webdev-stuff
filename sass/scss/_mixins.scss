@@ -46,11 +46,22 @@
 }
 
 //L3.4 Variable arguments
-@mixin button-ta($var...) {
+@mixin button-va($var...) {
   -webkit-transition: $var;
   -moz-transition: $var;
   transition: color $var;
 }
 .btn-ta {
-  @include button-ta(color 0.3s ease-in, background 0.5s ease-out)
+  @include button-va(color 0.3s ease-in, background 0.5s ease-out)
+}
+
+@mixin button1-va($radius, $color: #ccc) {
+  border-radius: $radius;
+  color: $color;
+}
+
+$properties: 4px, #000;
+
+.btn-test1 {
+  @include button1-va($properties...);
 }
