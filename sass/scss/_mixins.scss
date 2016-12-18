@@ -44,3 +44,13 @@
 .btn-test2 {
   @include button($color: #777, $radius: 5px); //change params order
 }
+
+//L3.4 Variable arguments
+@mixin button-ta($var...) {
+  -webkit-transition: $var;
+  -moz-transition: $var;
+  transition: color $var;
+}
+.btn-ta {
+  @include button-ta(color 0.3s ease-in, background 0.5s ease-out)
+}
