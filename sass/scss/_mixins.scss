@@ -65,3 +65,12 @@ $properties: 4px, #000;
 .btn-test1 {
   @include button1-va($properties...);
 }
+
+//L3.5 Interpolation + Mixins
+@mixin highlight($color, $side) {
+  border-#{$side}-color: $color;
+}
+
+.btn-im {
+  @include highlight(#f00, right);
+}

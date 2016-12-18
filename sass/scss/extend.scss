@@ -1,0 +1,11 @@
+.extend-a {
+  background: #777;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.extend-b {
+  @extend .extend-a;
+  background: #ff0;
+};
