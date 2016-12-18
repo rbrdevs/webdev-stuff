@@ -30,3 +30,17 @@
 .callout {
   @include box-sizing; //sin argumentos
 }
+
+//L3.3 multiple arguments
+@mixin button($radius, $color: #ccc) {
+  border-radius: $radius;
+  color: $color;
+}
+
+.btn-test1 {
+  @include button(4px); //only one parameter
+}
+
+.btn-test2 {
+  @include button($color: #777, $radius: 5px); //change params order
+}
