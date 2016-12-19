@@ -1,0 +1,6 @@
+//L6.2 Differing units
+.units-comb {
+  font-size: 10px + 4pt; //Sass combines to px
+  /* font-size: 10px + 4em; //Error on incompatible units
+  */
+}
