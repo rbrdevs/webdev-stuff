@@ -19,3 +19,12 @@ header {
     background: #fff;
   }
 }
+
+//L5.3 Each
+$authors: nick aimee dan drew;
+
+@each $author in $authors {
+  .author-#{$author} {
+    background: url(author-#{$author}.jpg);
+  }
+}
