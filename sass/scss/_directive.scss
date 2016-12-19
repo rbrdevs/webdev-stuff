@@ -51,3 +51,19 @@ $i: 1;
     $i: $i +1;
   }
 }
+
+//L5.5 Mixin'In
+@mixin button-mi($color, $rounded: false) {
+  color: $color;
+  @if $rounded {
+    border-radius: $rounded;
+  }
+}
+
+.btn-square {
+  @include button-mi(#000);
+}
+
+.btn-round {
+  @include button-mi(#333, 4px);
+}
