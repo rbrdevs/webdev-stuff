@@ -6,3 +6,16 @@
 .sidebar {
   width: fluidize(350px,1000px);
 }
+
+//L5.2 If
+$theme : light;
+
+header {
+  @if $theme == dark {
+    background: #000;
+  } @else if $theme == pink {
+    background: pink;
+  } @else {
+    background: #fff;
+  }
+}
