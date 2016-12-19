@@ -28,3 +28,26 @@ $authors: nick aimee dan drew;
     background: url(author-#{$author}.jpg);
   }
 }
+
+//L5.4 For + While
+.for-loop1 {
+  position: absolute;
+  right: 0;
+  @for $i from 1 through 3 {
+    &.item-#{$i} {
+      top: $i * 30px;
+    }
+  }
+}
+
+$i: 1;
+.while-loop1 {
+  position: absolute;
+  right: 0;
+  @while $i < 4 {
+    &.item-#{$i} {
+      top: $i * 30px;
+    }
+    $i: $i +1;
+  }
+}
