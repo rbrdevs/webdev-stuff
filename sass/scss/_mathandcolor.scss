@@ -31,3 +31,9 @@ $color-base: #333333;
   background: $color-base / 2;
 }
 
+//6.4 Color Shortcuts
+$color: #333333;
+
+.alpha {
+  background: rgba($color,0.8)
+}
