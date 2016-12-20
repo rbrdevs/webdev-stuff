@@ -1,0 +1,19 @@
+//L7.1 The Movement
+.sidebar-mq {
+    border: 1px solid #ccc;
+}
+@media (min-width: 700px) {
+    .sidebar-mq {
+        float: right;
+        width: 30%;
+    }
+}
+
+//L7.2 Nested Media Query
+.sidebar-mq-in {
+    border: 1px solid #ccc;
+    @media (min-width: 700px) {
+        float: right;
+        width: 30%;
+    }
+}
