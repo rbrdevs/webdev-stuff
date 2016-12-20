@@ -17,3 +17,30 @@
         width: 30%;
     }
 }
+
+//L7.3 Respond-To
+@mixin respond-to {
+    @media (min-width: 700px) {
+        @content
+    }
+}
+.sidebar-rt {
+    border: 1px solid #ccc;
+    @include respond-to {
+        float: right;
+        width: 30%;
+    }
+}
+
+@mixin respond-to1($val, $query) {
+    @media ($val: $query) {
+        @content
+    }
+}
+.sidebar-rt1 {
+    border: 1px solid #ccc;
+    @include respond-to1(min-width, 700px) {
+        float: right;
+        width: 30%;
+    }
+}
