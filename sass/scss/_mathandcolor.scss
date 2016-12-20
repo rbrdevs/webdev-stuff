@@ -31,9 +31,40 @@ $color-base: #333333;
   background: $color-base / 2;
 }
 
-//6.4 Color Shortcuts
+//6.5 Color Shortcuts
 $color: #333333;
 
 .alpha {
   background: rgba($color,0.8)
+}
+
+//6.6 Color Functions
+.lighten {
+  color: lighten($color, 20%);
+}
+.darken {
+  color: darken($color, 20%);
+}
+.saturate {
+  color: saturate($color, 20%);
+}
+.desaturate {
+  color: desaturate($color, 20%);
+}
+.mix-a {
+  color: mix(#ffff00, #107fc9);
+}
+.mix-b {
+  color: mix(#ffff00, #107fc9, 30%);
+}
+
+$color: #87bf64;
+.grayscale {
+  color: grayscale($color);
+}
+.invert {
+  color: invert($color);
+}
+.complement {
+  color: complement($color);
 }
