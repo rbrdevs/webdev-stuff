@@ -14,3 +14,20 @@ $context : 1000px;
 .sidebar-mf {
   width: percentage(350px/$context);
 }
+
+//L6.4 Math + Color
+$color-base: #333333;
+
+.addition {
+  background: $color-base + #112233;
+}
+.subtraction {
+  background: $color-base - #112233;
+}
+.multiplication {
+  background: $color-base * 2;
+}
+.division {
+  background: $color-base / 2;
+}
+
