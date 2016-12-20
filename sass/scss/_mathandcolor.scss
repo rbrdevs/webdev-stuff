@@ -4,3 +4,13 @@
   /* font-size: 10px + 4em; //Error on incompatible units
   */
 }
+
+//6.3 Math Functions
+h2.math-funcs {
+  line-height: ceil(1.2);
+}
+
+$context : 1000px;
+.sidebar-mf {
+  width: percentage(350px/$context);
+}
