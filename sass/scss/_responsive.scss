@@ -44,3 +44,15 @@
         width: 30%;
     }
 }
+
+//7.4 Responsive Pitfalls
+.sidebar-rp {
+    @media (min-width: 700px) { //won't combine
+        width: 50%;
+    }
+}
+.callout-rp {
+    @media (min-width: 700px) { //won't combine
+        width: 35%;
+    }
+}
